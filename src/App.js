@@ -75,12 +75,12 @@ const App = () => {
         <div id="recaptcha-container"></div>
         {user ? (
           <h2 className="text-center text-white font-medium text-2xl">
-            👍Login Success
+          Login Success
           </h2>
         ) : (
           <div className="w-80 flex flex-col gap-4 rounded-lg p-4">
             <h1 className="text-center leading-normal text-white font-medium text-3xl mb-6">
-              Welcome to <br /> CODE A PROGRAM
+        Login 
             </h1>
             {showOTP ? (
               <>
@@ -131,7 +131,7 @@ const App = () => {
                   {loading && (
                     <CgSpinner size={20} className="mt-1 animate-spin" />
                   )}
-                  <span>Send code via SMS</span>
+                  <span>Send code</span>
                 </button>
               </>
             )}
